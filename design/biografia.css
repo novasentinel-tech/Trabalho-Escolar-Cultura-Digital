@@ -1,0 +1,446 @@
+/* ============================================
+   BIOGRAFIA PAGE - SHARED STYLES
+   ============================================ */
+
+/* Hero Section */
+.bio-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 6rem 0 4rem;
+}
+
+.bio-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(ellipse at 30% 40%, var(--bio-color-glow, rgba(255, 107, 107, 0.18)) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(167, 139, 250, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(78, 205, 196, 0.08) 0%, transparent 50%);
+    animation: hero-bg-shift 15s ease-in-out infinite alternate;
+    z-index: 0;
+}
+
+.bio-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--cor-texto-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--cor-borda);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    margin-bottom: 2.5rem;
+}
+
+.bio-back-link:hover {
+    color: #fff;
+    border-color: var(--cor-borda-hover);
+    background: var(--cor-bg-card-hover);
+}
+
+.bio-back-link svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.bio-back-link:hover svg {
+    transform: translateX(-3px);
+}
+
+.bio-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    background: var(--bio-badge-bg, rgba(255, 107, 107, 0.1));
+    color: var(--bio-color, #FF6B6B);
+    border: 1px solid var(--bio-badge-border, rgba(255, 107, 107, 0.2));
+    animation: fadeInDown 0.8s ease-out 0.2s both;
+}
+
+.bio-hero-name {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: fadeInUp 0.8s ease-out 0.4s both, gradient-shift 5s ease infinite;
+}
+
+.bio-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: var(--cor-texto-muted);
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.bio-hero-dates {
+    font-size: 1rem;
+    color: var(--cor-texto-muted);
+    opacity: 0.7;
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
+/* Decorative line */
+.bio-divider {
+    width: 80px;
+    height: 3px;
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    border-radius: 2px;
+    margin: 0 auto 3rem;
+    animation: scaleIn 0.8s ease-out 1s both;
+}
+
+/* ============================================
+   CONTENT SECTIONS
+   ============================================ */
+.bio-section {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.bio-section-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+.bio-section-title span {
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bio-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    border-radius: 2px;
+}
+
+/* Story / main text */
+.bio-story {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio-story p {
+    font-size: 1.05rem;
+    color: var(--cor-texto);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.bio-story p:first-of-type::first-letter {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-titulo);
+    float: left;
+    margin-right: 0.5rem;
+    line-height: 1;
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Highlight quote */
+.bio-quote {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-left: 3px solid var(--bio-color, #FF6B6B);
+    border-radius: var(--radius);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.bio-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    font-family: var(--fonte-titulo);
+    color: var(--bio-color, #FF6B6B);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.bio-quote p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--cor-texto);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.bio-quote cite {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--cor-texto-muted);
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+/* ============================================
+   ACHIEVEMENTS / HIGHLIGHTS
+   ============================================ */
+.bio-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bio-highlight-card {
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.bio-highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.bio-highlight-card:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.4);
+}
+
+.bio-highlight-card:hover::before {
+    opacity: 1;
+}
+
+.bio-highlight-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--bio-badge-bg, rgba(255, 107, 107, 0.1));
+    border: 1px solid var(--bio-badge-border, rgba(255, 107, 107, 0.15));
+    margin-bottom: 1rem;
+    color: var(--bio-color, #FF6B6B);
+}
+
+.bio-highlight-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.bio-highlight-card h3 {
+    font-size: 1.1rem;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-titulo);
+    margin-bottom: 0.5rem;
+}
+
+.bio-highlight-card p {
+    font-size: 0.9rem;
+    color: var(--cor-texto-muted);
+    line-height: 1.6;
+}
+
+/* ============================================
+   LEGACY SECTION
+   ============================================ */
+.bio-legacy {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bio-legacy p {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   DATA CARDS (facts/numbers)
+   ============================================ */
+.bio-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-fact {
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.bio-fact:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateY(-3px);
+}
+
+.bio-fact-value {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-family: var(--fonte-titulo);
+    background: var(--bio-gradient, linear-gradient(135deg, #FF6B6B, #A78BFA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.3rem;
+}
+
+.bio-fact-label {
+    font-size: 0.85rem;
+    color: var(--cor-texto-muted);
+    line-height: 1.4;
+}
+
+/* ============================================
+   CTA / NAV TO OTHER BIOS
+   ============================================ */
+.bio-nav {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.bio-nav-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--cor-texto-muted);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.bio-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.2rem;
+    background: var(--cor-bg-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius);
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.bio-nav-link:hover {
+    background: var(--cor-bg-card-hover);
+    border-color: var(--cor-borda-hover);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.bio-nav-link .nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .bio-hero {
+        min-height: 60vh;
+        padding: 5rem 0 3rem;
+    }
+    
+    .bio-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .bio-facts {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .bio-nav-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .bio-quote {
+        padding: 1.5rem 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-facts {
+        grid-template-columns: 1fr;
+    }
+}
