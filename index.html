@@ -4,36 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mulheres Negras na Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="design/global.css">
 </head>
 <body>
+    <div id="particles-bg" class="particles-bg" aria-hidden="true"></div>
+    <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
     <header class="cabecalho">
         <div class="container">
-            <h1 class="titulo-principal">Mulheres Negras na Tecnologia</h1>
-            <p class="subtitulo">Inovação, resistência e representatividade</p>
-            <nav class="navegacao">
+            <div class="cabecalho-badge">Trabalho Escolar &mdash; Cultura Digital</div>
+            <h1 class="titulo-principal">
+                <span class="titulo-linha">Mulheres Negras</span>
+                <span class="titulo-linha titulo-destaque">na Tecnologia</span>
+            </h1>
+            <p class="subtitulo">Inovacao, resistencia e representatividade</p>
+            <nav class="navegacao" aria-label="Menu principal">
                 <ul class="menu">
-                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#introducao">Introducao</a></li>
                     <li><a href="#biografias">Biografias</a></li>
                     <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
                     <li><a href="#estatisticas">Dados</a></li>
                     <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#criadores">Criadores</a></li>
                 </ul>
             </nav>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="introducao" class="secao introducao">
             <div class="container">
-                <h2 class="titulo-secao">Quem são e por que importam</h2>
+                <h2 class="titulo-secao"><span>Quem sao e por que importam</span></h2>
                 <div class="conteudo-introducao">
                     <div class="texto-introducao">
-                        <p>As mulheres negras sempre estiveram na vanguarda da inovação, mesmo quando suas contribuições foram invisibilizadas pela história oficial. Na tecnologia, nomes como Katherine Johnson, Dorothy Vaughan e tantas outras foram fundamentais para conquistas como a chegada do homem à Lua. Hoje, pesquisadoras, engenheiras, empreendedoras e ativistas negras continuam a transformar o setor, criando tecnologias mais éticas, inclusivas e representativas.</p>
-                        <p>Este site é uma homenagem a essas mulheres extraordinárias e um convite para conhecermos suas trajetórias, desafios e legados. Acreditamos que inspirar novas gerações de meninas negras a seguirem carreiras em STEM (Ciência, Tecnologia, Engenharia e Matemática) é essencial para construirmos um futuro mais justo e diverso.</p>
+                        <p>As mulheres negras sempre estiveram na vanguarda da inovacao, mesmo quando suas contribuicoes foram invisibilizadas pela historia oficial. Na tecnologia, nomes como Katherine Johnson, Dorothy Vaughan e tantas outras foram fundamentais para conquistas como a chegada do homem a Lua.</p>
+                        <p>Hoje, pesquisadoras, engenheiras, empreendedoras e ativistas negras continuam a transformar o setor, criando tecnologias mais eticas, inclusivas e representativas.</p>
+                        <p>Este site e uma homenagem a essas mulheres extraordinarias e um convite para conhecermos suas trajetorias, desafios e legados. Acreditamos que inspirar novas geracoes de meninas negras a seguirem carreiras em STEM e essencial para construirmos um futuro mais justo e diverso.</p>
                     </div>
                     <div class="imagem-introducao">
-                        <img src="https://via.placeholder.com/400x300/5E2394/FFFFFF?text=Representatividade+negra+na+tecnologia" alt="Collage com mulheres negras em ambientes tecnológicos" class="img-responsive">
+                        <div class="intro-visual">
+                            <div class="intro-orb orb-1" aria-hidden="true"></div>
+                            <div class="intro-orb orb-2" aria-hidden="true"></div>
+                            <div class="intro-orb orb-3" aria-hidden="true"></div>
+                            <div class="intro-icon-grid" aria-hidden="true">
+                                <div class="icon-cell">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div class="icon-cell">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div class="icon-cell">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                                </div>
+                                <div class="icon-cell">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -41,159 +74,168 @@
 
         <section id="biografias" class="secao biografias">
             <div class="container">
-                <h2 class="titulo-secao">Conheça suas histórias</h2>
+                <h2 class="titulo-secao"><span>Conheca suas historias</span></h2>
                 <div class="grid-cards">
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Katherine+Johnson" alt="Katherine Johnson, matemática da NASA" class="card-imagem">
+                    <article class="card" style="--card-accent: #FF6B6B;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
                             <h3 class="card-titulo">Katherine Johnson</h3>
-                            <p class="card-area">Matemática (1918-2020)</p>
-                            <p class="card-descricao">Seus cálculos de mecânica orbital foram fundamentais para o sucesso das primeiras missões espaciais dos EUA. Trabalhou na NASA por 33 anos e recebeu a Medalha Presidencial da Liberdade em 2015.</p>
+                            <p class="card-area">Matematica (1918-2020)</p>
+                            <p class="card-descricao">Seus calculos de mecanica orbital foram fundamentais para o sucesso das primeiras missoes espaciais dos EUA. Trabalhou na NASA por 33 anos e recebeu a Medalha Presidencial da Liberdade em 2015.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Dorothy+Vaughan" alt="Dorothy Vaughan, matemática e programadora" class="card-imagem">
+                    <article class="card" style="--card-accent: #4ECDC4;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
                             <h3 class="card-titulo">Dorothy Vaughan</h3>
-                            <p class="card-area">Matemática e Programadora (1910-2008)</p>
-                            <p class="card-descricao">Primeira supervisora negra na NASA. Especialista em FORTRAN, foi pioneira na transição dos cálculos manuais para a computação eletrônica.</p>
+                            <p class="card-area">Matematica e Programadora (1910-2008)</p>
+                            <p class="card-descricao">Primeira supervisora negra na NASA. Especialista em FORTRAN, foi pioneira na transicao dos calculos manuais para a computacao eletronica.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Mary+Jackson" alt="Mary Jackson, engenheira aeroespacial" class="card-imagem">
+                    <article class="card" style="--card-accent: #FFE66D;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                             <h3 class="card-titulo">Mary Jackson</h3>
                             <p class="card-area">Engenheira Aeroespacial (1921-2005)</p>
-                            <p class="card-descricao">Primeira engenheira negra da NASA. Lutou para que mulheres e negros tivessem oportunidades de promoção e educação continuada.</p>
+                            <p class="card-descricao">Primeira engenheira negra da NASA. Lutou para que mulheres e negros tivessem oportunidades de promocao e educacao continuada.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Mae+Jemison" alt="Mae Jemison, astronauta e médica" class="card-imagem">
+                    <article class="card" style="--card-accent: #A78BFA;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
                             <h3 class="card-titulo">Mae Jemison</h3>
-                            <p class="card-area">Astronauta, Médica e Engenheira (1956-)</p>
-                            <p class="card-descricao">Primeira mulher negra a viajar ao espaço (1992). Também é fundadora da empresa de tecnologia 100 Year Starship.</p>
+                            <p class="card-area">Astronauta, Medica e Engenheira (1956-)</p>
+                            <p class="card-descricao">Primeira mulher negra a viajar ao espaco (1992). Tambem e fundadora da empresa de tecnologia 100 Year Starship.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Ursula+Burns" alt="Ursula Burns, executiva de tecnologia" class="card-imagem">
+                    <article class="card" style="--card-accent: #F472B6;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div>
                             <h3 class="card-titulo">Ursula Burns</h3>
                             <p class="card-area">Executiva (1958-)</p>
-                            <p class="card-descricao">Primeira mulher negra a comandar uma empresa do índice Fortune 500 (Xerox). Engenheira mecânica, é referência em liderança e inovação.</p>
+                            <p class="card-descricao">Primeira mulher negra a comandar uma empresa do indice Fortune 500 (Xerox). Engenheira mecanica, e referencia em lideranca e inovacao.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Kimberly+Bryant" alt="Kimberly Bryant, fundadora da Black Girls Code" class="card-imagem">
+                    <article class="card" style="--card-accent: #34D399;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
                             <h3 class="card-titulo">Kimberly Bryant</h3>
-                            <p class="card-area">Engenheira Elétrica e Empreendedora (1967-)</p>
-                            <p class="card-descricao">Fundadora da Black Girls Code, organização que ensina programação para meninas negras e incentiva a diversidade na tecnologia.</p>
+                            <p class="card-area">Engenheira Eletrica e Empreendedora (1967-)</p>
+                            <p class="card-descricao">Fundadora da Black Girls Code, organizacao que ensina programacao para meninas negras e incentiva a diversidade na tecnologia.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Arlan+Hamilton" alt="Arlan Hamilton, investidora" class="card-imagem">
+                    <article class="card" style="--card-accent: #FBBF24;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
                             <h3 class="card-titulo">Arlan Hamilton</h3>
                             <p class="card-area">Investidora e Empreendedora (1980-)</p>
                             <p class="card-descricao">Fundadora da Backstage Capital, que investe em startups lideradas por minorias sub-representadas. Autora do livro "It's About Damn Time".</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Joy+Buolamwini" alt="Joy Buolamwini, cientista da computação" class="card-imagem">
+                    <article class="card" style="--card-accent: #60A5FA;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
                             <h3 class="card-titulo">Joy Buolamwini</h3>
-                            <p class="card-area">Cientista da Computação (1989-)</p>
-                            <p class="card-descricao">Fundadora da Algorithmic Justice League, que combate vieses raciais e de gênero em sistemas de inteligência artificial.</p>
+                            <p class="card-area">Cientista da Computacao (1989-)</p>
+                            <p class="card-descricao">Fundadora da Algorithmic Justice League, que combate vieses raciais e de genero em sistemas de inteligencia artificial.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Timnit+Gebru" alt="Timnit Gebru, pesquisadora de IA" class="card-imagem">
+                    <article class="card" style="--card-accent: #F87171;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
                             <h3 class="card-titulo">Timnit Gebru</h3>
-                            <p class="card-area">Cientista da Computação (1983-)</p>
-                            <p class="card-descricao">Co-fundadora do grupo Black in AI. Suas pesquisas expõem os impactos discriminatórios de algoritmos e a falta de diversidade no setor.</p>
+                            <p class="card-area">Cientista da Computacao (1983-)</p>
+                            <p class="card-descricao">Co-fundadora do grupo Black in AI. Suas pesquisas expoem os impactos discriminatorios de algoritmos e a falta de diversidade no setor.</p>
                         </div>
                     </article>
 
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Ruha+Benjamin" alt="Ruha Benjamin, socióloga e escritora" class="card-imagem">
+                    <article class="card" style="--card-accent: #C084FC;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
                             <h3 class="card-titulo">Ruha Benjamin</h3>
-                            <p class="card-area">Socióloga e Escritora (1978-)</p>
-                            <p class="card-descricao">Autora de "Race After Technology", obra fundamental para entender como o racismo se reproduz em inovações tecnológicas.</p>
+                            <p class="card-area">Sociologa e Escritora (1978-)</p>
+                            <p class="card-descricao">Autora de "Race After Technology", obra fundamental para entender como o racismo se reproduz em inovacoes tecnologicas.</p>
                         </div>
                     </article>
 
-                    
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Ayanna+Howard" alt="Ayanna Howard, roboticista" class="card-imagem">
+                    <article class="card" style="--card-accent: #2DD4BF;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
                             <h3 class="card-titulo">Ayanna Howard</h3>
                             <p class="card-area">Roboticista (1972-)</p>
-                            <p class="card-descricao">Especialista em robótica e IA, atualmente reitora da Faculdade de Engenharia da Ohio State University. Trabalhou na NASA e criou tecnologias assistivas para crianças com necessidades especiais.</p>
+                            <p class="card-descricao">Especialista em robotica e IA, atualmente reitora da Faculdade de Engenharia da Ohio State University. Trabalhou na NASA e criou tecnologias assistivas para criancas com necessidades especiais.</p>
                         </div>
                     </article>
 
-                   
-                    <article class="card">
-                        <img src="https://via.placeholder.com/300x200/8A2BE2/FFFFFF?text=Lisa+Gelobter" alt="Lisa Gelobter, cientista da computação" class="card-imagem">
+                    <article class="card" style="--card-accent: #FB923C;">
+                        <div class="card-glow" aria-hidden="true"></div>
                         <div class="card-conteudo">
+                            <div class="card-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
                             <h3 class="card-titulo">Lisa Gelobter</h3>
-                            <p class="card-area">Cientista da Computação (1971-)</p>
-                            <p class="card-descricao">Participou do desenvolvimento de tecnologias que deram origem ao GIF e ao Shockwave. Foi Chief Digital Officer no Departamento de Educação dos EUA.</p>
+                            <p class="card-area">Cientista da Computacao (1971-)</p>
+                            <p class="card-descricao">Participou do desenvolvimento de tecnologias que deram origem ao GIF e ao Shockwave. Foi Chief Digital Officer no Departamento de Educacao dos EUA.</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        
         <section id="linha-do-tempo" class="secao linha-do-tempo">
             <div class="container">
-                <h2 class="titulo-secao">Linha do Tempo: Conquistas e Marcos</h2>
+                <h2 class="titulo-secao"><span>Linha do Tempo: Conquistas e Marcos</span></h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-data">1943</div>
                         <div class="timeline-conteudo">
-                            <h3>Início do trabalho das "computadoras" de West Area</h3>
-                            <p>Durante a Segunda Guerra, mulheres negras começam a ser contratadas como computadoras no Langley Research Center da NASA, formando um grupo segregado que mais tarde seria imortalizado no livro "Estrelas Além do Tempo".</p>
+                            <h3>Inicio do trabalho das "computadoras" de West Area</h3>
+                            <p>Durante a Segunda Guerra, mulheres negras comecam a ser contratadas como computadoras no Langley Research Center da NASA.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">1949</div>
                         <div class="timeline-conteudo">
                             <h3>Dorothy Vaughan se torna supervisora</h3>
-                            <p>Dorothy Vaughan assume a liderança do grupo de computadoras de West Area, tornando-se a primeira supervisora negra na história da NASA.</p>
+                            <p>Dorothy Vaughan assume a lideranca do grupo de computadoras de West Area, tornando-se a primeira supervisora negra na historia da NASA.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">1958</div>
                         <div class="timeline-conteudo">
                             <h3>Mary Jackson torna-se engenheira</h3>
-                            <p>Mary Jackson conclui os cursos necessários e se torna a primeira engenheira negra da NASA.</p>
+                            <p>Mary Jackson conclui os cursos necessarios e se torna a primeira engenheira negra da NASA.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">1962</div>
                         <div class="timeline-conteudo">
-                            <h3>Katherine Johnson verifica os cálculos do Friendship 7</h3>
-                            <p>John Glenn pede que Katherine Johnson verifique pessoalmente os cálculos da trajetória da missão que o levou a orbitar a Terra.</p>
+                            <h3>Katherine Johnson verifica os calculos do Friendship 7</h3>
+                            <p>John Glenn pede que Katherine Johnson verifique pessoalmente os calculos da trajetoria da missao que o levou a orbitar a Terra.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">1992</div>
                         <div class="timeline-conteudo">
-                            <h3>Mae Jemison vai ao espaço</h3>
-                            <p>A bordo do ônibus espacial Endeavour, Mae Jemison torna-se a primeira mulher negra a viajar ao espaço.</p>
+                            <h3>Mae Jemison vai ao espaco</h3>
+                            <p>A bordo do onibus espacial Endeavour, Mae Jemison torna-se a primeira mulher negra a viajar ao espaco.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -206,29 +248,29 @@
                     <div class="timeline-item">
                         <div class="timeline-data">2011</div>
                         <div class="timeline-conteudo">
-                            <h3>Fundação da Black Girls Code</h3>
-                            <p>Kimberly Bryant funda a Black Girls Code para ensinar programação a meninas negras e combater a exclusão digital.</p>
+                            <h3>Fundacao da Black Girls Code</h3>
+                            <p>Kimberly Bryant funda a Black Girls Code para ensinar programacao a meninas negras e combater a exclusao digital.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">2016</div>
                         <div class="timeline-conteudo">
-                            <h3>Lançamento do filme "Estrelas Além do Tempo"</h3>
-                            <p>O filme conta a história de Katherine Johnson, Dorothy Vaughan e Mary Jackson, popularizando suas contribuições para a corrida espacial.</p>
+                            <h3>Lancamento do filme "Estrelas Alem do Tempo"</h3>
+                            <p>O filme conta a historia de Katherine Johnson, Dorothy Vaughan e Mary Jackson, popularizando suas contribuicoes para a corrida espacial.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">2017</div>
                         <div class="timeline-conteudo">
                             <h3>Joy Buolamwini funda a Algorithmic Justice League</h3>
-                            <p>A organização expõe os vieses raciais em sistemas de reconhecimento facial e IA, pressionando por mais ética no setor.</p>
+                            <p>A organizacao expoe os vieses raciais em sistemas de reconhecimento facial e IA, pressionando por mais etica no setor.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-data">2020</div>
                         <div class="timeline-conteudo">
                             <h3>Katherine Johnson recebe homenagem do Google</h3>
-                            <p>A matemática ganha um Doodle interativo em seu aniversário de 102 anos, celebrando sua vida e legado.</p>
+                            <p>A matematica ganha um Doodle interativo em seu aniversario de 102 anos, celebrando sua vida e legado.</p>
                         </div>
                     </div>
                 </div>
@@ -237,31 +279,31 @@
 
         <section id="estatisticas" class="secao estatisticas">
             <div class="container">
-                <h2 class="titulo-secao">Dados sobre Representatividade</h2>
+                <h2 class="titulo-secao"><span>Dados sobre Representatividade</span></h2>
                 <div class="grid-estatisticas">
                     <div class="card-estatistica">
-                        <span class="numero">3%</span>
-                        <p class="descricao-estatistica">dos cargos de tecnologia nos EUA são ocupados por mulheres negras (dados de 2021).</p>
+                        <span class="numero" data-valor="3" data-sufixo="%">3%</span>
+                        <p class="descricao-estatistica">dos cargos de tecnologia nos EUA sao ocupados por mulheres negras (dados de 2021).</p>
                     </div>
                     <div class="card-estatistica">
-                        <span class="numero">12%</span>
-                        <p class="descricao-estatistica">das mulheres negras estão em cargos de liderança no setor de tecnologia (fonte: AnitaB.org).</p>
+                        <span class="numero" data-valor="12" data-sufixo="%">12%</span>
+                        <p class="descricao-estatistica">das mulheres negras estao em cargos de lideranca no setor de tecnologia (fonte: AnitaB.org).</p>
                     </div>
                     <div class="card-estatistica">
-                        <span class="numero">0%</span>
-                        <p class="descricao-estatistica">das equipes de desenvolvimento de IA nos principais laboratórios de tecnologia têm representação negra feminina (estudo da AI Now Institute).</p>
+                        <span class="numero" data-valor="0" data-sufixo="%">0%</span>
+                        <p class="descricao-estatistica">das equipes de desenvolvimento de IA nos principais laboratorios de tecnologia tem representacao negra feminina.</p>
                     </div>
                     <div class="card-estatistica">
-                        <span class="numero">+50%</span>
-                        <p class="descricao-estatistica">dos algoritmos de reconhecimento facial apresentam erro ao identificar mulheres negras, contra menos de 1% para homens brancos.</p>
+                        <span class="numero" data-valor="50" data-sufixo="%" data-prefixo="+">+50%</span>
+                        <p class="descricao-estatistica">dos algoritmos de reconhecimento facial apresentam erro ao identificar mulheres negras.</p>
                     </div>
                     <div class="card-estatistica">
-                        <span class="numero">85%</span>
-                        <p class="descricao-estatistica">das meninas negras se interessam por carreiras STEM, mas apenas 35% persistem devido à falta de representação e incentivo.</p>
+                        <span class="numero" data-valor="85" data-sufixo="%">85%</span>
+                        <p class="descricao-estatistica">das meninas negras se interessam por carreiras STEM, mas apenas 35% persistem por falta de incentivo.</p>
                     </div>
                     <div class="card-estatistica">
-                        <span class="numero">1ª</span>
-                        <p class="descricao-estatistica">mulher negra a receber um prêmio Nobel em ciências da computação ainda não existe – mas estamos caminhando para mudar isso.</p>
+                        <span class="numero estatistica-texto">1a</span>
+                        <p class="descricao-estatistica">mulher negra a receber um premio Nobel em ciencias da computacao ainda nao existe - mas estamos caminhando para mudar isso.</p>
                     </div>
                 </div>
             </div>
@@ -269,42 +311,96 @@
 
         <section id="recursos" class="secao recursos">
             <div class="container">
-                <h2 class="titulo-secao">Saiba mais e se inspire</h2>
+                <h2 class="titulo-secao"><span>Saiba mais e se inspire</span></h2>
                 <div class="grid-recursos">
                     <div class="recurso">
+                        <div class="recurso-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                        </div>
                         <h3>Livros</h3>
                         <ul>
-                            <li>"Estrelas Além do Tempo" – Margot Lee Shetterly</li>
-                            <li>"Race After Technology" – Ruha Benjamin</li>
-                            <li>"O Cálculo da Alma" – Dorothy Roberts (abordagem sobre tecnologia e justiça reprodutiva)</li>
-                            <li>"Algorithms of Oppression" – Safiya U. Noble</li>
+                            <li>"Estrelas Alem do Tempo" - Margot Lee Shetterly</li>
+                            <li>"Race After Technology" - Ruha Benjamin</li>
+                            <li>"O Calculo da Alma" - Dorothy Roberts</li>
+                            <li>"Algorithms of Oppression" - Safiya U. Noble</li>
                         </ul>
                     </div>
                     <div class="recurso">
-                        <h3>Documentários e Filmes</h3>
+                        <div class="recurso-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        </div>
+                        <h3>Documentarios e Filmes</h3>
                         <ul>
-                            <li>"Estrelas Além do Tempo" (2016) – Disney+</li>
-                            <li>"Coded Bias" (2020) – Netflix (sobre Joy Buolamwini e os vieses em IA)</li>
-                            <li>"A Vida Imediata" – curta sobre mulheres negras na ciência (YouTube)</li>
+                            <li>"Estrelas Alem do Tempo" (2016) - Disney+</li>
+                            <li>"Coded Bias" (2020) - Netflix</li>
+                            <li>"A Vida Imediata" - curta sobre mulheres negras na ciencia</li>
                         </ul>
                     </div>
                     <div class="recurso">
-                        <h3>Organizações</h3>
+                        <div class="recurso-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <h3>Organizacoes</h3>
                         <ul>
-                            <li><a href="https://www.blackgirlscode.com" target="_blank">Black Girls Code</a></li>
-                            <li><a href="https://www.ajl.org" target="_blank">Algorithmic Justice League</a></li>
-                            <li><a href="https://www.blackinai.org" target="_blank">Black in AI</a></li>
-                            <li><a href="https://www.girlswhocode.com" target="_blank">Girls Who Code (com programas para meninas negras)</a></li>
+                            <li><a href="https://www.blackgirlscode.com" target="_blank" rel="noopener noreferrer">Black Girls Code</a></li>
+                            <li><a href="https://www.ajl.org" target="_blank" rel="noopener noreferrer">Algorithmic Justice League</a></li>
+                            <li><a href="https://www.blackinai.org" target="_blank" rel="noopener noreferrer">Black in AI</a></li>
+                            <li><a href="https://www.girlswhocode.com" target="_blank" rel="noopener noreferrer">Girls Who Code</a></li>
                         </ul>
                     </div>
                     <div class="recurso">
-                        <h3>Perfis para seguir nas redes</h3>
+                        <div class="recurso-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                        </div>
+                        <h3>Perfis para seguir</h3>
                         <ul>
-                            <li>@joybuolamwini (Instagram/Twitter)</li>
-                            <li>@timnitgebru (Twitter)</li>
-                            <li>@kimberly_bryant (Instagram)</li>
-                            <li>@ruhabenjamin (Twitter)</li>
+                            <li>@joybuolamwini</li>
+                            <li>@timnitgebru</li>
+                            <li>@kimberly_bryant</li>
+                            <li>@ruhabenjamin</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="criadores" class="secao criadores">
+            <div class="container">
+                <h2 class="titulo-secao"><span>Criadores do Trabalho</span></h2>
+                <p class="criadores-subtitulo">A equipe responsavel por pesquisar, criar e desenvolver este projeto</p>
+                <div class="grid-criadores">
+                    <div class="criador-card">
+                        <div class="criador-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div class="criador-info">
+                            <h3 class="criador-nome">Joao Pedro Rodrigues</h3>
+                            <span class="criador-role">Desenvolvedor Principal</span>
+                            <p class="criador-desc">Responsavel pela arquitetura, design e desenvolvimento do site completo.</p>
+                        </div>
+                        <div class="criador-decoration" aria-hidden="true"></div>
+                    </div>
+                    <div class="criador-card">
+                        <div class="criador-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <div class="criador-info">
+                            <h3 class="criador-nome">Samuel Adryan</h3>
+                            <span class="criador-role">Redator Principal</span>
+                            <p class="criador-desc">Responsavel pela producao de todo o conteudo textual e narrativa do projeto.</p>
+                        </div>
+                        <div class="criador-decoration" aria-hidden="true"></div>
+                    </div>
+                    <div class="criador-card">
+                        <div class="criador-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        </div>
+                        <div class="criador-info">
+                            <h3 class="criador-nome">Gabriel</h3>
+                            <span class="criador-role">Pesquisador Principal</span>
+                            <p class="criador-desc">Responsavel pela pesquisa, curadoria de dados e verificacao de informacoes.</p>
+                        </div>
+                        <div class="criador-decoration" aria-hidden="true"></div>
                     </div>
                 </div>
             </div>
@@ -313,10 +409,20 @@
 
     <footer class="rodape">
         <div class="container">
-            <p class="rodape-texto">Trabalho escolar sobre Mulheres Negras na Tecnologia | Desenvolvido com HTML, CSS e JavaScript</p>
-            <p class="rodape-texto">Referências: NASA, Black Girls Code, Algorithmic Justice League, livros e artigos citados.</p>
-            <p class="rodape-texto">Imagens: placeholders (via placeholder.com) - em um site real, usaríamos fotos licenciadas.</p>
-            <p class="rodape-texto">© 2025 - Projeto de conscientização e homenagem</p>
+            <div class="rodape-conteudo">
+                <div class="rodape-brand">
+                    <span class="rodape-logo">MNT</span>
+                    <p>Mulheres Negras na Tecnologia</p>
+                </div>
+                <div class="rodape-textos">
+                    <p class="rodape-texto">Trabalho escolar sobre Mulheres Negras na Tecnologia</p>
+                    <p class="rodape-texto">Desenvolvido com HTML, CSS e JavaScript</p>
+                    <p class="rodape-texto">Referencias: NASA, Black Girls Code, Algorithmic Justice League</p>
+                </div>
+            </div>
+            <div class="rodape-bottom">
+                <p>&copy; 2025 - Projeto de conscientizacao e homenagem</p>
+            </div>
         </div>
     </footer>
 
